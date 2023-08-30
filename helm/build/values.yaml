@@ -1,0 +1,15 @@
+app:
+  name: leflestminer-poi-gateway-app
+  namespace: leflestminer
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/leflestminer-gateway
+  org: rhdh-deploy
+  name: leflestminer-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: leflestminer/poi-gateway-app
+  tag: latest
